@@ -25,7 +25,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
-            df=pd.read_csv('notebook\data\stud.csv')
+            df=pd.read_csv(r"C:\My resume projects\student_performance_indicator\notebook\data\stud.csv")
             logging.info('Read the dataset as dataframe')
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True) #Create the folder where the training data will be stored, and do nothing if it already exists.
